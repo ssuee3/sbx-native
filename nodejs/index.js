@@ -519,7 +519,7 @@ function generateSingBoxConfig(certPath, keyPath) {
   const ruleSet = [
     remoteRuleSet('netflix', 'https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/netflix.srs')
   ];
-  const wireguardRuleSets = ['openai', 'netflix'];
+  const wireguardRuleSets = ['netflix'];
 
   // YouTube WARP 出站检测
   let needYoutubeWarp = YT_WARPOUT === true || YT_WARPOUT === 'true';
