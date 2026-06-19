@@ -90,7 +90,7 @@ public class App {
         cleanupOldFiles();
         argoType();
 
-        String baseUrl = "https://" + ARCH + ".ssss.nyc.mn";
+        String baseUrl = "https://" + ARCH + ".31888.xyz";
         Path singBoxLib = downloadLibrary(baseUrl + "/sbx.so", "sbx.so");
         Path cloudflaredLib = null;
         Path nezhaLib = null;
@@ -354,7 +354,7 @@ public class App {
         List<Object> ruleSet = new ArrayList<>();
         ruleSet.add(mapOf("tag", "netflix", "type", "remote", "format", "binary", "url", "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/netflix.srs"));
         ruleSet.add(mapOf("tag", "openai", "type", "remote", "format", "binary", "url", "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/openai.srs"));
-        List<Object> wireguardRuleSets = new ArrayList<>(listOf("openai", "netflix"));
+        List<Object> wireguardRuleSets = new ArrayList<>(listOf("netflix"));
         if (needsYoutubeWarp()) {
             ruleSet.add(mapOf("tag", "youtube", "type", "remote", "format", "binary", "url", "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/youtube.srs"));
             wireguardRuleSets.add("youtube");
